@@ -1,0 +1,148 @@
+body {
+    background: linear-gradient(#e6f7ff, #ffffff);
+    font-family: "メイリオ", "Hiragino Sans", sans-serif;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: #1c75bc;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+article {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #999999;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+article h1 {
+    color: #1c75bc;
+    background-color: #fff3b0;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.float-img {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #888888;
+    border: 5px solid #ffffff;
+}
+.clear {
+    clear: both;
+}
+
+.point-list {
+    list-style-image: url("../image/icon.png");
+    padding-left: 40px;
+}
+
+.breadcrumb {
+    padding-left: 0;
+}
+
+.breadcrumb li {
+    display: inline;
+    list-style-type: none;
+}
+
+.pagetop {
+    clear: both;
+    text-align: right;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    .float-img {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+     border-radius: 20px;
+    box-shadow: 5px 5px 10px #888888;
+}
+}
+
+section h2 {
+     background-color: #e6f7ff;
+    border-left: 10px solid #1c75bc;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.Red{
+    color: #f17816;
+}
+
+h1 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #1c75bc;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    body {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    article {
+        box-shadow: none;
+        border: none;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: underline;
+    }
+}
